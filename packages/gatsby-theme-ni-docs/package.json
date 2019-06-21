@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-apollo-docs",
+  "name": "gatsby-theme-ni-docs",
   "version": "1.0.11",
   "main": "index.js",
   "dependencies": {
@@ -15,7 +15,7 @@
     "gatsby-remark-prismjs": "^3.2.8",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-source-git": "^1.0.1",
-    "gatsby-theme-apollo": "^1.0.0-alpha.15",
+    "gatsby-theme-ni": "^1.0.0-alpha.15",
     "gatsby-transformer-remark": "^2.3.12",
     "js-yaml": "^3.13.1",
     "prismjs": "^1.15.0",

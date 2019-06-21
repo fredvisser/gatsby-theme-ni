@@ -1,6 +1,8 @@
-# gatsby-theme-apollo-docs
+# gatsby-theme-ni-docs
 
 This is an entirely configuration-based Gatsby theme that generates a documentation website based on a series of Markdown or MDX files. It also exports a series of [components](#components) that can be used within MDX pages.
+
+Entirely built upon the fantastic [gatsby-theme-apollo-docs](https://github.com/apollographql/gatsby-theme-apollo/tree/master/packages/gatsby-theme-apollo-docs) theme from [Apollo](https://www.apollographql.com).
 
 ## Table of contents
 
@@ -16,7 +18,7 @@ This is an entirely configuration-based Gatsby theme that generates a documentat
 ## Installation
 
 ```bash
-$ npm install gatsby gatsby-theme-apollo-docs
+$ npm install gatsby gatsby-theme-ni-docs
 ```
 
 ## Configuration
