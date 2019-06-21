@@ -1,21 +1,23 @@
 <div align="center">
-  <img height="80" src="https://i.imgur.com/RcWoDL4.png">
-  <h1 align="center">Apollo Gatsby Themes</h1>
+<!--   <img height="80" src="https://i.imgur.com/RcWoDL4.png"> -->
+  <h1 align="center">NI Gatsby Themes</h1>
 </div>
 
-This repo contains [Gatsby](https://gatsbyjs.org) themes that we use to create websites at Apollo. In its most basic implementation, the theme provides a CSS reset, styles for regular HTML elements (`h1`, `h2`, `p`, `li`, etc.), and a handful of useful layout components.
+This repo contains [Gatsby](https://gatsbyjs.org) themes that we use to create the NI Design System website. In its most basic implementation, the theme provides a CSS reset, styles for regular HTML elements (`h1`, `h2`, `p`, `li`, etc.), and a handful of useful layout components.
+
+Entirely built upon the fantastic [gatsby-theme-apollo](https://github.com/apollographql/gatsby-theme-apollo) from [Apollo](https://www.apollographql.com).
 
 ## Packages
 
-- [`gatsby-theme-apollo`](./packages/gatsby-theme-apollo)
-- [`gatsby-theme-apollo-docs`](./packages/gatsby-theme-apollo-docs)
+- [`gatsby-theme-ni`](./packages/gatsby-theme-ni)
+- [`gatsby-theme-ni-docs`](./packages/gatsby-theme-ni-docs)
 
 ## Basic usage
 
-First, install `gatsby` and the theme that you want to use. This example will be using the base theme, `gatsby-theme-apollo`.
+First, install `gatsby` and the theme that you want to use. This example will be using the base theme, `gatsby-theme-ni`.
 
 ```bash
-$ npm install gatsby gatsby-theme-apollo
+$ npm install gatsby gatsby-theme-ni
 ```
 
 Using a Gatsby theme is really easy! Simply configure your theme under the `__experimentalThemes` property in your Gatsby config. The only required option here is `root`, which should always be `__dirname`. It's also a good idea to give your site a `title` and `description`, as defined under the `siteMetadata` property in the config.
@@ -25,7 +27,7 @@ Using a Gatsby theme is really easy! Simply configure your theme under the `__ex
 module.exports = {
   __experimentalThemes: [
     {
-      resolve: 'gatsby-theme-apollo',
+      resolve: 'gatsby-theme-ni',
       options: {
         root: __dirname
       }
@@ -43,7 +45,7 @@ Now add some React components to your _src/pages_ directory, and you're off to t
 ```js
 // src/pages/index.js
 import React from 'react';
-import {Layout, LogoTitle} from 'gatsby-theme-apollo';
+import {Layout, LogoTitle} from 'gatsby-theme-ni';
 
 export default function Home() {
   return (
@@ -55,7 +57,7 @@ export default function Home() {
 }
 ```
 
-As you can see, the page is wrapped in a `Layout` component and contains a `LogoTitle`, both coming from `gatsby-theme-apollo`. Our base theme has a bunch of useful shared components like these, and they're all documented [in the base theme](./packages/gatsby-theme-apollo).
+As you can see, the page is wrapped in a `Layout` component and contains a `LogoTitle`, both coming from `gatsby-theme-ni`. Our base theme has a bunch of useful shared components like these, and they're all documented [in the base theme](./packages/gatsby-theme-ni).
 
 ## Deploying to a subdirectory
 
@@ -77,20 +79,3 @@ $ mkdir -p YOUR_PATH_PREFIX
 $ mv public/* YOUR_PATH_PREFIX
 $ mv YOUR_PATH_PREFIX public/
 ```
-
-We use [Netlify](https://netlify.com) to deploy our websites, so to express this slightly more complicated build process to them, create a _netlify.toml_ file that follows this pattern:
-
-```toml
-# netlify.toml
-[build]
-  base = "/"
-  publish = "public/"
-  command = "gatsby build --prefix-paths && mkdir -p YOUR_PATH_PREFIX && mv public/* YOUR_PATH_PREFIX && mv YOUR_PATH_PREFIX public/"
-```
-
-We use [Fly](https://fly.io) to manage our server rewrites and redirects. To point your new Netlify deployment to a page on apollographql.com, first [create a new backend](https://fly.io/sites/www-apollodata-com/backends) using your site's Netlify alias. Next, you'll need to [add _two_ rewrite rules](https://fly.io/sites/www-apollodata-com/rules):
-
-- `/YOUR_PATH_PREFIX/:page` ➡️ `/YOUR_PATH_PREFIX/$page`
-- `/YOUR_PATH_PREFIX` ➡️ `/YOUR_PATH_PREFIX`
-
-Be sure to set the priority of each of these rules to `3`, or a value lower than the top two redirect rules that apply to our website root. Once these rewrite rules take effect, your site will be live at https://apollographql.com/YOUR_PATH_PREFIX.
