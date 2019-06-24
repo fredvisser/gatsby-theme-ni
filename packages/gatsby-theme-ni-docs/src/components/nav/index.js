@@ -2,7 +2,7 @@ import NavItem from './nav-item';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
-import {breakpoints} from 'gatsby-theme-apollo';
+import {breakpoints} from 'gatsby-theme-ni';
 
 const Container = styled.nav({
   display: 'flex',

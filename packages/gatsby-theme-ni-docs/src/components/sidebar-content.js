@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import SelectLink from './select-link';
 import styled from '@emotion/styled';
-import {SidebarNav, colors} from 'gatsby-theme-apollo';
+import {SidebarNav, colors} from 'gatsby-theme-ni';
 import {getVersionBasePath} from '../utils';
 
 const SidebarContentHeader = styled.h4({

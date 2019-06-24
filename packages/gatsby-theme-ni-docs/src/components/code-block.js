@@ -3,7 +3,7 @@ import React, {createContext, useRef, useState} from 'react';
 import clipboard from 'clipboard-polyfill';
 import styled from '@emotion/styled';
 import {Button} from './buttons';
-import {colors} from 'gatsby-theme-apollo';
+import {colors} from 'gatsby-theme-ni';
 
 const Container = styled.div({
   margin: '0.5em 0 1.45em',

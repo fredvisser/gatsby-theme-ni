@@ -1,4 +1,4 @@
-# gatsby-theme-apollo
+# gatsby-theme-ni
 
 This is the base theme for building Apollo-branded Gatsby sites. It contains a small amount of configuration, and a handful of components that make it easy to build consistent-looking UIs.
 
@@ -27,7 +27,7 @@ It comes with a few Gatsby plugins:
 ## Installation
 
 ```bash
-$ npm install gatsby gatsby-theme-apollo
+$ npm install gatsby gatsby-theme-ni
 ```
 
 ## Configuration
@@ -37,7 +37,7 @@ $ npm install gatsby gatsby-theme-apollo
 module.exports = {
   __experimentalThemes: [
     {
-      resolve: 'gatsby-theme-apollo',
+      resolve: 'gatsby-theme-ni',
       options: {
         root: __dirname
       }
@@ -52,10 +52,10 @@ module.exports = {
 
 ## Components and utilities
 
-All of the React components and utilities documented here are available as named exports in the `gatsby-theme-apollo` package. You can import them like this:
+All of the React components and utilities documented here are available as named exports in the `gatsby-theme-ni` package. You can import them like this:
 
 ```js
-import {MenuButton, Sidebar, breakpoints} from 'gatsby-theme-apollo';
+import {MenuButton, Sidebar, breakpoints} from 'gatsby-theme-ni';
 ```
 
 ### Layout
@@ -63,7 +63,7 @@ import {MenuButton, Sidebar, breakpoints} from 'gatsby-theme-apollo';
 `Layout` should wrap every page that gets created. It configures [React Helmet](https://github.com/nfl/react-helmet) and sets the meta description tag with data from the `siteMetadata` property in your Gatsby config. It also sets the favicon for the page to the Apollo "A" logo.
 
 ```js
-import {Layout} from 'gatsby-theme-apollo';
+import {Layout} from 'gatsby-theme-ni';
 
 function MyPage() {
   return (
@@ -83,7 +83,7 @@ function MyPage() {
 A sticky header component with a white background and our brand primary, ![#220a82](https://placehold.it/15/220a82/000000?text=+) `#220a82` as the font color.
 
 ```js
-import {Layout, Header} from 'gatsby-theme-apollo';
+import {Layout, Header} from 'gatsby-theme-ni';
 
 function MyPage() {
   return (
@@ -97,7 +97,7 @@ function MyPage() {
 `MobileHeader` and `DesktopHeader` components are also exported, and can be used to easily render headers with different content depending on the window size.
 
 ```js
-import {Layout, MobileHeader, DesktopHeader} from 'gatsby-theme-apollo';
+import {Layout, MobileHeader, DesktopHeader} from 'gatsby-theme-ni';
 
 function MyPage() {
   return (
@@ -177,7 +177,7 @@ Each element in the array can have `title`, `path`, `pages`, and `anchor` props.
 The `SidebarNav` component gives the currently selected page an "active" style, and if it's a subpage, it will keep the currently active section expanded. To facilitate this, you must pass the current path to the `pathname` prop. Luckily, Gatsby exposes this in the `location` prop that gets passed automatically to every page!
 
 ```js
-import {Layout, Sidebar, SidebarNav} from 'gatsby-theme-apollo';
+import {Layout, Sidebar, SidebarNav} from 'gatsby-theme-ni';
 
 function MyPage(props) {
   return (
@@ -211,7 +211,7 @@ import {
   ResponsiveSidebar,
   FlexWrapper,
   MenuButton
-} from 'gatsby-theme-apollo';
+} from 'gatsby-theme-ni';
 
 function MyPage() {
   return (
@@ -240,17 +240,17 @@ function MyPage() {
 A component that renders an Apollo "A" logo, and the site title, as defined in the [`siteMetadata` Gatsby config option](https://www.gatsbyjs.org/docs/gatsby-config/#sitemetadata).
 
 ```js
-import {LogoTitle} from 'gatsby-theme-apollo';
+import {LogoTitle} from 'gatsby-theme-ni';
 
 function MyPage() {
   return <LogoTitle />;
 }
 ```
 
-Through [component shadowing](https://www.gatsbyjs.org/blog/2019-01-29-themes-update-child-theming-and-component-shadowing/), you can override the logo that gets shown. Simply create a file that exports a SVG React component in your theme consumer at _src/gatsby-theme-apollo/components/logo.js_.
+Through [component shadowing](https://www.gatsbyjs.org/blog/2019-01-29-themes-update-child-theming-and-component-shadowing/), you can override the logo that gets shown. Simply create a file that exports a SVG React component in your theme consumer at _src/gatsby-theme-ni/components/logo.js_.
 
 ```js
-// src/gatsby-theme-apollo/components/logo.js
+// src/gatsby-theme-ni/components/logo.js
 export {ReactComponent as default} from '../../assets/custom-logo.svg';
 ```
 
@@ -267,7 +267,7 @@ Check out [this CodeSandbox](https://codesandbox.io/s/mq7p0z3wmj) for a full com
 An object mapping semantic names to hex strings. All of these colors are drawn from [Space Kit](https://github.com/apollographql/space-kit#colors). You can use this utility to write CSS-in-JS rules like this:
 
 ```js
-import {colors} from 'gatsby-theme-apollo';
+import {colors} from 'gatsby-theme-ni';
 
 const StyledButton = styled.button({
   color: colors.primary,
@@ -280,7 +280,7 @@ const StyledButton = styled.button({
  A mapping of size keys to media queries. This is useful for writing responsive CSS-in-JS components.
 
  ```js
- import {breakpoints} from 'gatsby-theme-apollo';
+ import {breakpoints} from 'gatsby-theme-ni';
 
  const StyledMenu = styled.nav({
    fontSize: 24,

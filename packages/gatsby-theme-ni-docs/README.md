@@ -2,7 +2,7 @@
 
 This is an entirely configuration-based Gatsby theme that generates a documentation website based on a series of Markdown or MDX files. It also exports a series of [components](#components) that can be used within MDX pages.
 
-Entirely built upon the fantastic [gatsby-theme-apollo-docs](https://github.com/apollographql/gatsby-theme-apollo/tree/master/packages/gatsby-theme-apollo-docs) theme from [Apollo](https://www.apollographql.com).
+Entirely built upon the fantastic [gatsby-theme-ni-docs](https://github.com/apollographql/gatsby-theme-ni/tree/master/packages/gatsby-theme-ni-docs) theme from [Apollo](https://www.apollographql.com).
 
 ## Table of contents
 
@@ -29,7 +29,7 @@ module.exports = {
   pathPrefix: '/docs/apollo-server',
   __experimentalThemes: [
     {
-      resolve: 'gatsby-theme-apollo-docs',
+      resolve: 'gatsby-theme-ni-docs',
       options: {
         root: __dirname,
         subtitle: 'Apollo Server',
@@ -141,7 +141,7 @@ A button that functions as an internal link (using [Gatsby Link](https://www.gat
 | to       | string | A path to another page in your site |
 
 ```jsx
-import {ButtonWrapper, ButtonLink} from 'gatsby-theme-apollo-docs';
+import {ButtonWrapper, ButtonLink} from 'gatsby-theme-ni-docs';
 
 <ButtonWrapper>
   <ButtonLink
@@ -187,7 +187,7 @@ import {
   ExpansionPanel,
   ExpansionPanelList,
   ExpansionPanelListItem
-} from 'gatsby-theme-apollo-docs';
+} from 'gatsby-theme-ni-docs';
 
 <ExpansionPanel title="How to use the ExpansionPanel component">
 
@@ -252,7 +252,7 @@ You'll also need to edit the _docs_ directory's _.gitignore_ to reflect this cha
 ### 2. Install dependencies
 
 ```bash
-$ npm install gatsby gatsby-theme-apollo-docs
+$ npm install gatsby gatsby-theme-ni-docs
 ```
 
 That was easy!
@@ -295,7 +295,7 @@ module.exports = {
   pathPrefix: '/docs/ios', // similar to `root` in _config.yml
   __experimentalThemes: [
     {
-      resolve: 'gatsby-theme-apollo-docs',
+      resolve: 'gatsby-theme-ni-docs',
       options: {
         root: __dirname, // <-- this is the only new property added
         subtitle: 'Apollo iOS Guide',

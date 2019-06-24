@@ -2,7 +2,7 @@
 import React, {Component, Fragment, createRef} from 'react';
 import styled from '@emotion/styled';
 import {MdClose} from 'react-icons/md';
-import {breakpoints, colors, smallCaps} from 'gatsby-theme-apollo';
+import {breakpoints, colors, smallCaps} from 'gatsby-theme-ni';
 import {css} from '@emotion/core';
 import {position, size, transparentize} from 'polished';
 

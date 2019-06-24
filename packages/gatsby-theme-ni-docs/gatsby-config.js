@@ -31,7 +31,7 @@ module.exports = ({
   return {
     __experimentalThemes: [
       {
-        resolve: 'gatsby-theme-apollo',
+        resolve: 'gatsby-theme-ni',
         options: {
           root
         }

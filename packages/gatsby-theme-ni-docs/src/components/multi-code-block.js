@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import {CODE_BLOCK_HEADER_HEIGHT} from './code-block';
 import {FaJs, FaReact} from 'react-icons/fa';
 import {GiFishingHook} from 'react-icons/gi';
-import {colors} from 'gatsby-theme-apollo';
+import {colors} from 'gatsby-theme-ni';
 import {size, transparentize} from 'polished';
 
 const Container = styled.div({

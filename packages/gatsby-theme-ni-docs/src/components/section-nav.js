@@ -5,7 +5,7 @@ import striptags from 'striptags';
 import styled from '@emotion/styled';
 import useScroll from 'react-use/lib/useScroll';
 import useWindowSize from 'react-use/lib/useWindowSize';
-import {colors} from 'gatsby-theme-apollo';
+import {colors} from 'gatsby-theme-ni';
 
 const AsideHeading = styled.h4({
   fontWeight: 600
