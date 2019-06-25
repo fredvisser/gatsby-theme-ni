@@ -1,4 +1,5 @@
-const {colors} = require('@apollo/space-kit');
+const {colors} = require('../../space-kit');
+// const {colors} = require('@apollo/space-kit');
 
 exports.colors = {
   primary: colors.indigo.dark,

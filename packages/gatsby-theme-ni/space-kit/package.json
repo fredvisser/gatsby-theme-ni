@@ -1,0 +1,65 @@
+{
+  "_from": "@apollo/space-kit@0.0.8",
+  "_id": "@apollo/space-kit@0.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-uWA+PSXR+NhgvnG3MBNSM4+0EyzXzEyNgrX1FGS0bTEfyEQ546S5ghoSQwJoLqQdZHqw3UKzba5PH4cJrqbI4Q==",
+  "_location": "/@apollo/space-kit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@apollo/space-kit@0.0.8",
+    "name": "@apollo/space-kit",
+    "escapedName": "@apollo%2fspace-kit",
+    "scope": "@apollo",
+    "rawSpec": "0.0.8",
+    "saveSpec": null,
+    "fetchSpec": "0.0.8"
+  },
+  "_requiredBy": [
+    "/gatsby-theme-apollo"
+  ],
+  "_resolved": "https://registry.npmjs.org/@apollo/space-kit/-/space-kit-0.0.8.tgz",
+  "_shasum": "f6550ab2c9689f67f2c8d0298e7b356ddcf1c31c",
+  "_spec": "@apollo/space-kit@0.0.8",
+  "_where": "/Users/fvisser/Documents/Git Repositories/design-system-gatsby/docs/node_modules/gatsby-theme-apollo",
+  "bugs": {
+    "url": "https://github.com/apollographql/space-kit/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "deprecated": false,
+  "description": "Home base for Apollo's design system",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-actions": "^5.0.11",
+    "@storybook/addon-links": "^5.0.11",
+    "@storybook/addons": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "@trevorblades/eslint-config": "^6.22.1",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "less": "^3.9.0"
+  },
+  "eslintConfig": {
+    "extends": "@trevorblades"
+  },
+  "homepage": "https://github.com/apollographql/space-kit#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@apollo/space-kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apollographql/space-kit.git"
+  },
+  "scripts": {
+    "build-storybook": "build-storybook",
+    "prepare": "node build-reset.js",
+    "storybook": "start-storybook -p 6006",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.8"
+}
