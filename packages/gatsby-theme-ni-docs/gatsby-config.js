@@ -29,7 +29,14 @@ module.exports = ({
     {
       resolve: 'gatsby-remark-embedded-codesandbox',
       options: {
-        directory: `${root}/source/`,
+        directory: `${root}/source/webElements/examples`,
+      }
+    },
+    {
+      resolve: 'gatsby-remark-code-repls',
+      options: {
+        defaultText: 'Click here',
+        directory: `${root}/source/webElements/examples`,
       }
     }
   ];
