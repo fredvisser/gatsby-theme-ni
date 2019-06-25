@@ -25,6 +25,12 @@ module.exports = ({
       options: {
         exceptions: checkLinksExceptions
       }
+    },
+    {
+      resolve: 'gastby-remark-embedded-codesandbox',
+      options: {
+        directory: `${root}/source/`,
+      }
     }
   ];
 
@@ -38,7 +44,7 @@ module.exports = ({
       }
     ],
     siteMetadata: {
-      title: 'Apollo Docs',
+      title: 'NI Fuse Design System',
       subtitle,
       description
     },
@@ -74,7 +80,7 @@ module.exports = ({
           name: key,
           remote: `https://github.com/${githubRepo}`,
           branch: versions[key],
-          patterns: 'docs/**'
+          patterns: 'apps/**'
         }
       }))
     ]
