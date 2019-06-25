@@ -27,7 +27,7 @@ module.exports = ({
       }
     },
     {
-      resolve: 'gastby-remark-embedded-codesandbox',
+      resolve: 'gatsby-remark-embedded-codesandbox',
       options: {
         directory: `${root}/source/`,
       }
