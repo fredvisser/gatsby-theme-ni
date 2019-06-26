@@ -64,7 +64,6 @@ module.exports = {
 | description          | string | The site description for SEO and social (FB, Twitter) tags                     |
 | contentDir           | string | The directory where docs content exists (`docs/source` by default)             |
 | githubRepo           | string | The owner and name of the content repository on GitHub                         |
-| spectrumPath         | string | The path to be appended to Spectrum links                                      |
 | versions             | array  | An array of objects representing the versions that the website should generate |
 | sidebarCategories    | object | An object mapping categories to page paths ([described below][])               |
 | checkLinksExceptions | array  | An array of strings passed to [`gastby-remark-check-links`][]                  |

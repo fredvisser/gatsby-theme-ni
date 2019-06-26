@@ -66,7 +66,6 @@ export default function Template(props) {
   const {
     sidebarContents,
     githubUrl,
-    spectrumPath,
     typescriptApiBox,
     versions,
     defaultVersion
@@ -124,7 +123,6 @@ export default function Template(props) {
                   headings={headings}
                   hash={hash}
                   githubUrl={githubUrl}
-                  spectrumPath={spectrumPath}
                   mainRef={mainRef}
                 >
                   {file.childMdx ? (

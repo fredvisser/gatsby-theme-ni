@@ -125,7 +125,6 @@ exports.createPages = async ({actions, graphql}, options) => {
     contentDir = 'docs/source',
     githubRepo,
     sidebarCategories,
-    spectrumPath,
     typescriptApiBox,
     versions = {},
     defaultVersion
@@ -191,7 +190,6 @@ exports.createPages = async ({actions, graphql}, options) => {
             contentDir,
             relativePath
           ),
-        spectrumPath: spectrumPath || repo,
         typescriptApiBox,
         versions: versionKeys, // only need to send version labels to client
         defaultVersion

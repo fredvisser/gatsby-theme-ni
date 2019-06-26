@@ -47,7 +47,6 @@ const navConfig = {
     text: 'Community',
     subpages: {
       'https://blog.apollographql.com': 'Blog',
-      'https://spectrum.chat/apollo': 'Spectrum',
       'https://twitter.com/apollographql': 'Twitter',
       'https://youtube.com/channel/UC0pEW_GOrMJ23l8QcrGdKSw': 'YouTube',
       '/docs/community': 'Contribute',

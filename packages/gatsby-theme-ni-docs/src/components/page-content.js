@@ -12,7 +12,6 @@ import {
   headerHeight,
   smallCaps
 } from 'gatsby-theme-ni';
-import {ReactComponent as SpectrumLogo} from '../assets/logos/spectrum.svg';
 import {withPrefix} from 'gatsby';
 
 const Container = styled.div({
@@ -210,9 +209,6 @@ export default function PageContent(props) {
         <AsideLink href={props.githubUrl}>
           <FaGithub /> Edit on GitHub
         </AsideLink>
-        <AsideLink href={`https://spectrum.chat/apollo/${props.spectrumPath}`}>
-          <SpectrumLogo /> Discuss on Spectrum
-        </AsideLink>
       </Aside>
     </Container>
   );
@@ -226,5 +222,4 @@ PageContent.propTypes = {
   hash: PropTypes.string.isRequired,
   mainRef: PropTypes.object.isRequired,
   headings: PropTypes.array.isRequired,
-  spectrumPath: PropTypes.string
 };
