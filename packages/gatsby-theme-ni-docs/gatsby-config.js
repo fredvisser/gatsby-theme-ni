@@ -27,12 +27,6 @@ module.exports = ({
       }
     },
     {
-      resolve: 'gatsby-remark-embedded-codesandbox',
-      options: {
-        directory: `${root}/source/`,
-      }
-    },
-    {
       resolve: 'gatsby-remark-code-repls',
       options: {
         defaultText: 'Click here',
