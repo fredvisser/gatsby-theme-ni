@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-ni-docs",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "main": "index.js",
   "dependencies": {
     "@mdx-js/mdx": "^1.0.0-rc.4",
