@@ -81,13 +81,6 @@ module.exports = ({
           gatsbyRemarkPlugins
         }
       },
-      `gatsby-transformer-yaml`,
-      {
-        resolve: `gatsby-source-filesystem`,
-        options: {
-        path: `${root}/source/data`,
-      },
-    },
       ...Object.keys(versions).map(key => ({
         resolve: 'gatsby-source-git',
         options: {
