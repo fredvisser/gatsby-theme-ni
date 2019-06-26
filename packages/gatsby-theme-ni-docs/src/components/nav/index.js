@@ -25,7 +25,7 @@ const navConfig = {
 
 function formatValue(value) {
   return value.startsWith('/')
-    ? `https://www.apollographql.com${value}`
+    ? `https://ni.github.io/design-system${value}`
     : value;
 }
 
