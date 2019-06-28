@@ -25,7 +25,7 @@ const navConfig = {
 
 function formatValue(value) {
   return value.startsWith('/')
-    ? `https://fredvisser.github.io/${value}`
+    ? `https://fredvisser.github.io${value}`
     : value;
 }
 
