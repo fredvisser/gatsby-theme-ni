@@ -26,13 +26,13 @@ module.exports = ({
         exceptions: checkLinksExceptions
       }
     },
-    {
-      resolve: 'gatsby-remark-code-repls',
-      options: {
-        defaultText: 'Click here',
-        directory: `${root}/source/`,
-      }
-    }
+    // {
+    //   resolve: 'gatsby-remark-code-repls',
+    //   options: {
+    //     defaultText: 'Click here',
+    //     directory: `${root}/source/`,
+    //   }
+    // }
   ];
 
   return {
