@@ -63,12 +63,12 @@ module.exports = ({
           plugins: gatsbyRemarkPlugins
         }
       },
-      {
-        resolve: 'gatsby-plugin-google-analytics',
-        options: {
-          trackingId: 'UA-74643563-13'
-        }
-      },
+      // {
+      //   resolve: 'gatsby-plugin-google-analytics',
+      //   options: {
+      //     trackingId: 'UA-74643563-13'
+      //   }
+      // },
       {
         resolve: 'gatsby-mdx',
         options: {

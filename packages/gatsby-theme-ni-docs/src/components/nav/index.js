@@ -15,11 +15,11 @@ const Container = styled.nav({
 });
 
 const navConfig = {
-  '/fuse': {
-    text: 'Fuse',
+  '/design-system': {
+    text: 'Desktop',
   },
-  '/web-fuse': {
-    text: 'Web Fuse',
+  '/design-system-web': {
+    text: 'Web',
   },
 };
 

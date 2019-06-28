@@ -27,5 +27,6 @@
     "remark": "^10.0.1",
     "remark-react": "^5.0.1",
     "striptags": "^3.1.1"
-  }
+  },
+  "gitHead": "4d08213e00be3c9103481c604e4d50251ad86dc0"
 }
