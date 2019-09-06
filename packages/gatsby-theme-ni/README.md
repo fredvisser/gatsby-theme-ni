@@ -1,6 +1,6 @@
 # gatsby-theme-ni
 
-This is the base theme for building Apollo-branded Gatsby sites. It contains a small amount of configuration, and a handful of components that make it easy to build consistent-looking UIs.
+This is the base theme for building NI-branded Gatsby sites. It contains a small amount of configuration, and a handful of components that make it easy to build consistent-looking UIs.
 
 It comes with a few Gatsby plugins:
 
@@ -125,7 +125,7 @@ function MyPage() {
 A component that renders a sidebar with a [`LogoTitle`](#logo-title) component in the top left corner. It can also be configured to collapse into the left side of the page on narrow windows.
 
 ```js
-import {Layout, Sidebar} from 'gatbsy-theme-apollo';
+import {Layout, Sidebar} from 'gatbsy-theme-ni';
 
 function MyPage() {
   return (
@@ -237,7 +237,7 @@ function MyPage() {
 
 ### LogoTitle
 
-A component that renders an Apollo "A" logo, and the site title, as defined in the [`siteMetadata` Gatsby config option](https://www.gatsbyjs.org/docs/gatsby-config/#sitemetadata).
+A component that renders a NI logo, and the site title, as defined in the [`siteMetadata` Gatsby config option](https://www.gatsbyjs.org/docs/gatsby-config/#sitemetadata).
 
 ```js
 import {LogoTitle} from 'gatsby-theme-ni';
@@ -260,7 +260,7 @@ Check out [this CodeSandbox](https://codesandbox.io/s/mq7p0z3wmj) for a full com
 
 | Prop name | Type | Required | Description                          |
 | --------- | ---- | -------- | ------------------------------------ |
-| noLogo    | bool | no       | If `true`, the Apollo logo is hidden |
+| noLogo    | bool | no       | If `true`, the NI logo is hidden |
 
 ### colors
 

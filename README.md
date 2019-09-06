@@ -5,12 +5,19 @@
 
 This repo contains [Gatsby](https://gatsbyjs.org) themes that we use to create the NI Design System website. In its most basic implementation, the theme provides a CSS reset, styles for regular HTML elements (`h1`, `h2`, `p`, `li`, etc.), and a handful of useful layout components.
 
-Entirely built upon the fantastic [gatsby-theme-ni](https://github.com/apollographql/gatsby-theme-ni) theme from [Apollo](https://www.apollographql.com).
+Entirely built upon the fantastic [gatsby-theme-apollo](https://github.com/apollographql/gatsby-theme-apollo) theme from [Apollo](https://www.apollographql.com).
 
 ## Packages
 
 - [`gatsby-theme-ni`](./packages/gatsby-theme-ni)
 - [`gatsby-theme-ni-docs`](./packages/gatsby-theme-ni-docs)
+
+## Publish theme changes
+
+- `npx lerna publish` and follow the prompts
+- `cd packages/gatsby-theme-ni-docs/` or `cd packages/gatsby-theme-ni/`
+- `npm login`
+- `npm publish`
 
 ## Basic usage
 
