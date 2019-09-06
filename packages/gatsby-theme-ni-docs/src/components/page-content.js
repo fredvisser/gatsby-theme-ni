@@ -99,7 +99,10 @@ const BodyContent = styled.div({
     maxWidth: '100%',
     margin: '0 auto'
   },
-  table
+  table,
+  iframe: {
+    border: 'none'
+  }
 });
 
 const Aside = styled.aside({
